@@ -1,6 +1,28 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => global config 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let s:vim_runtime = expand('<sfile>:p:h')."/.."
+"call pathogen#infect(s:vim_runtime.'/sources_forked/{}')
+"call pathogen#infect(s:vim_runtime.'/sources_non_forked/{}')
+call pathogen#infect(s:vim_runtime.'/plugins/{}')
+call pathogen#helptags()
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => GUI related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if exists('$TMUX') 
+    if has('nvim')
+        let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+        set termguicolors
+    else
+        set term=screen-256color 
+    endif
+    if (has("termguicolors"))
+        set termguicolors
+    endif
+endif
+
 " Set font according to system
 if has("mac") || has("macunix")
     set gfn=IBM\ Plex\ Mono:h14,Hack:h14,Source\ Code\ Pro:h15,Menlo:h15
@@ -35,9 +57,6 @@ if has("gui_running")
     let g:onedark_termcolors=256
     colorscheme onedark
 else
-    "colorscheme tender
-    "colorscheme desert
-    
     let g:onedark_termcolors=256
     colorscheme onedark
 endif
@@ -47,6 +66,8 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let mapleader = ' '
+
 " Enable syntax highlighting
 syntax enable 
 
@@ -163,7 +184,7 @@ set wrap "Wrap lines
 
 " set undofile path
 try
-    set undodir=~/.vim_runtime/temp_dirs/undodir
+    set undodir=~/.vim/temp_dirs/undodir
     set undofile
 catch
 endtry

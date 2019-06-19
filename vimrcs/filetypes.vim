@@ -1,6 +1,6 @@
-""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Python section
-""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let python_highlight_all = 1
 au FileType python syn keyword pythonDecorator True None False self
 
@@ -22,9 +22,9 @@ au FileType python set cinkeys-=0#
 au FileType python set indentkeys-=0#
 
 
-""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => JavaScript section
-"""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au FileType javascript call JavaScriptFold()
 au FileType javascript setl fen
 au FileType javascript setl nocindent
@@ -45,15 +45,3 @@ function! JavaScriptFold()
     endfunction
     setl foldtext=FoldText()
 endfunction
-
-
-""""""""""""""""""""""""""""""
-" => Shell section
-""""""""""""""""""""""""""""""
-if exists('$TMUX') 
-    if has('nvim')
-        set termguicolors
-    else
-        set term=screen-256color 
-    endif
-endif

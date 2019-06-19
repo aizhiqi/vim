@@ -11,7 +11,7 @@ Plug 'joshdick/onedark.vim'
 
 " move caret & select & copy
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'yuttie/comfortable-motion.vim'
+"Plug 'yuttie/comfortable-motion.vim'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'terryma/vim-expand-region'
@@ -40,8 +40,8 @@ Plug 'tpope/vim-commentary'
 " search 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'mileszs/ack.vim'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'tacahiroy/ctrlp-funky'
+"Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'tacahiroy/ctrlp-funky'
 Plug 'dyng/ctrlsf.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.vim/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'

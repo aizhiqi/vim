@@ -42,29 +42,29 @@ let g:lightline = {
       \ }
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => CTRL-P
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ctrlp_working_path_mode = 0
-
-let g:ctrlp_map = '<c-f>'
-map <leader>cf :CtrlP<cr>
-map <leader>cb :CtrlPBuffer<cr>
-map <leader>cm :CtrlPMRUFiles<cr>
-map <leader>cx :CtrlPMixed<cr>
-
-let g:ctrlp_max_height = 20
-let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
-let g:ctrlp_working_path_mode = 'ra'
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" ctrlp-funky
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ctrlp_funky_syntax_highlight = 1
-nnoremap <Leader>ct :CtrlPFunky<Cr>
-nnoremap <Leader>cT :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
-let g:ctrlp_funky_matchtype = 'path'
-let g:ctrlp_extensions = ['funky']
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" => CTRL-P
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"let g:ctrlp_working_path_mode = 0
+"
+"let g:ctrlp_map = '<c-f>'
+"map <leader>cf :CtrlP<cr>
+"map <leader>cb :CtrlPBuffer<cr>
+"map <leader>cm :CtrlPMRUFiles<cr>
+"map <leader>cx :CtrlPMixed<cr>
+"
+"let g:ctrlp_max_height = 20
+"let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
+"let g:ctrlp_working_path_mode = 'ra'
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" ctrlp-funky
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"let g:ctrlp_funky_syntax_highlight = 1
+"nnoremap <Leader>ct :CtrlPFunky<Cr>
+"nnoremap <Leader>cT :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+"let g:ctrlp_funky_matchtype = 'path'
+"let g:ctrlp_extensions = ['funky']
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

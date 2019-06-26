@@ -52,6 +52,8 @@ Plug 'junegunn/fzf.vim'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+"Plug 'mortonfox/nerdtree-ag'
+Plug 'tyok/nerdtree-ack'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -71,8 +73,8 @@ Plug 'plasticboy/vim-markdown'
 
 " autocomplete
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+"Plug 'SirVer/ultisnips'
+"Plug 'honza/vim-snippets'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 

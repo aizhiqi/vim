@@ -12,17 +12,17 @@ let mapleader = " "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => GUI related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-if exists('$TMUX') 
-    if has('nvim')
-        let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-        set termguicolors
-    else
-        set term=screen-256color 
-    endif
-    if (has("termguicolors"))
-        set termguicolors
-    endif
-endif
+"if exists('$TMUX') 
+"    if has('nvim')
+"        let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+"        set termguicolors
+"    else
+"        set term=screen-256color 
+"    endif
+"        set termguicolors
+"    if (has("termguicolors"))
+"    endif
+"endif
 
 " Set font according to system
 if has("mac") || has("macunix")

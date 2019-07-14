@@ -74,7 +74,7 @@ Plug 'plasticboy/vim-markdown'
 " autocomplete
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Plug 'SirVer/ultisnips'
-"Plug 'honza/vim-snippets'
+Plug 'honza/vim-snippets'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
@@ -85,7 +85,7 @@ Plug 'universal-ctags/ctags'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
-"Plug 'Valloric/YouCompleteMe', { 'dir': '~/.vim/plugins/YouCompleteMe', 'do': './install.sh --go-completer --clang-completer' }
+Plug 'Valloric/YouCompleteMe', { 'dir': '~/.vim/plugins/YouCompleteMe', 'do': './install.sh --go-completer --clang-completer' }
 Plug 'tenfyzhong/CompleteParameter.vim'
 "language support
 Plug 'natebosch/vim-lsc'

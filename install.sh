@@ -17,4 +17,6 @@ source ~/.vim/vimrcs/my_configs.vim
 catch
 endtry' > ~/.vimrc
 
+ln -s ~/.vim/.tmux.conf ~/.tmux.conf
+
 echo "Installed successfully! Enjoy :-)"

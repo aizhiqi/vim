@@ -71,13 +71,6 @@ Plug 'plasticboy/vim-markdown'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
-" autocomplete
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
 "tagbar
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'majutsushi/tagbar'
@@ -85,11 +78,32 @@ Plug 'universal-ctags/ctags'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
-Plug 'Valloric/YouCompleteMe', { 'dir': '~/.vim/plugins/YouCompleteMe', 'do': './install.sh --go-completer --clang-completer' }
-Plug 'tenfyzhong/CompleteParameter.vim'
+"coc
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Use release branch
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Or latest tag
+Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+" Or build from source code by use yarn: https://yarnpkg.com
+"Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+" autocomplete snippets
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+"Plug 'Valloric/YouCompleteMe', { 'dir': '~/.vim/plugins/YouCompleteMe', 'do': './install.sh --go-completer --clang-completer' }
+"Plug 'tenfyzhong/CompleteParameter.vim'
+
+
 "language support
-Plug 'natebosch/vim-lsc'
-Plug 'dart-lang/dart-vim-plugin'
+"Plug 'natebosch/vim-lsc'
+"Plug 'dart-lang/dart-vim-plugin'
+
 Plug 'fatih/vim-go'
 
 if has("macunix")

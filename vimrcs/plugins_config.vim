@@ -209,7 +209,6 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 " UltiSnips
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:UltiSnipsExpandTrigger = "<nop>"
-inoremap <expr> <CR> pumvisible() ? "<C-R>=UltiSnips#ExpandSnippetOrJump()<CR>" : "\<CR>"
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -249,52 +248,9 @@ nnoremap <Leader>t :TagbarToggle<Cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ctags 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 nnoremap <silent> <Leader>tag :silent call GenCtags(FindRoot())<CR>
 autocmd BufWritePost *.go silent call GenCtags(expand("%:p"))
 autocmd BufReadPost *.go silent call AddCtagsPath(FindRoot())
-
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" CompleteParameter.vim'
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-inoremap <silent><expr> ( complete_parameter#pre_complete("()")
-smap <c-l> <Plug>(complete_parameter#goto_next_parameter)
-imap <c-l> <Plug>(complete_parameter#goto_next_parameter)
-smap <c-h> <Plug>(complete_parameter#goto_previous_parameter)
-imap <c-h> <Plug>(complete_parameter#goto_previoius_parameter)
-let g:complete_parameter_use_ultisnips_mapping = 1
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" natebosch/vim-lsc
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:lsc_server_commands = {'dart': 'dart_language_server'}
-let g:lsc_enable_autocomplete = v:true
-"let g:lsc_auto_map = v:true " Use defaults
-" ... or set only the keys you want mapped, defaults are:
-let g:lsc_auto_map = {
-    \ 'GoToDefinition': '<C-]>',
-    \ 'FindReferences': 'gr',
-    \ 'NextReference': '<C-n>',
-    \ 'PreviousReference': '<C-p>',
-    \ 'FindImplementations': 'gI',
-    \ 'FindCodeActions': 'ga',
-    \ 'DocumentSymbol': 'go',
-    \ 'WorkspaceSymbol': 'gS',
-    \ 'ShowHover': 'K',
-    \ 'Completion': 'completefunc',
-    \}
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" dart-lang/dart-vim-plugin
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let dart_html_in_string=v:true 
-let dart_corelib_highlight=v:true
-let dart_style_guide = 2
-let dart_format_on_save = 1
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -311,20 +267,3 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
 map <leader>gr :w<cr>:GoRun<cr>
 map <leader>gb :w<cr>:GoBuild 
-map <leader>gd :w<cr>:GoDef<cr>
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" YouCompleteMe
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"if has("win16") || has("win32") 
-"    let g:ycm_server_python_interpreter='D:\DevTools\Python\Python27\python.exe'
-"else
-"    let g:ycm_server_python_interpreter='/usr/bin/python'
-"endif
-"let g:ycm_global_ycm_extra_conf='~/.vim/my_plugins/YouCompleteMe'
-"nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR> 
-"è®©Vimçè¡¥å¨èåè¡ä¸ºä¸ä¸è¬IDEä¸è´(åèVimTip1228)
-"set completeopt=longest,menu	
-"autocmd InsertLeave * if pumvisible() == 0|pclose|endif	"ç¦»å¼æå¥æ¨¡å¼åèªå¨å³é­é¢è§çªå£
-"inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"	"åè½¦å³éä¸­å½åé¡¹

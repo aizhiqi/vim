@@ -10,6 +10,7 @@ source ~/.vim/vimrcs/basic.vim
 source ~/.vim/vimrcs/extended.vim
 source ~/.vim/vimrcs/plugins.vim
 source ~/.vim/vimrcs/plugins_config.vim
+source ~/.vim/vimrcs/coc.vim
 source ~/.vim/vimrcs/filetypes.vim
 
 try

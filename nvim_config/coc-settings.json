@@ -1,18 +1,16 @@
 {
     "languageserver": {
         "dart": {
-            "command": "dart_language_server", // in windows is dart_language_server.bat
-            "args": [],
+            "command": "dart",
+            "args": [
+                "/Volumes/Documents/aizhiqi/Development/flutter/bin/cache/dart-sdk/bin/snapshots/analysis_server.dart.snapshot",
+                "--lsp"
+            ],
             "filetypes": [
                 "dart"
             ],
-            "initializationOptions": {},
-            "settings": {
-                "dart": {
-                    "validation": {},
-                    "completion": {}
-                }
-            }
+            "disableDynamicRegister": true,
+            "trace.server": "verbose"
         },
         "bash": {
             "command": "bash-language-server",

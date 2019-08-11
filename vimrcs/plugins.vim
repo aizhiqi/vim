@@ -80,12 +80,7 @@ Plug 'universal-ctags/ctags'
 
 "coc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Use release branch
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Or latest tag
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
-" Or build from source code by use yarn: https://yarnpkg.com
-"Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
@@ -96,14 +91,10 @@ Plug 'honza/vim-snippets'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
-"Plug 'Valloric/YouCompleteMe', { 'dir': '~/.vim/plugins/YouCompleteMe', 'do': './install.sh --go-completer --clang-completer' }
-"Plug 'tenfyzhong/CompleteParameter.vim'
+"dart support
+Plug 'dart-lang/dart-vim-plugin'
 
-
-"language support
-"Plug 'natebosch/vim-lsc'
-"Plug 'dart-lang/dart-vim-plugin'
-
+"go support
 Plug 'fatih/vim-go'
 
 if has("macunix")

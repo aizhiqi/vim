@@ -123,3 +123,6 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 "keymap to open yank list
 nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
+
+"enable highlight current symbol on CursorHold
+autocmd CursorHold * silent call CocActionAsync('highlight')

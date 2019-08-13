@@ -139,15 +139,15 @@ map <leader>nc :execute 'NERDTree '.expand("%:p:h")<cr>
 " nerdtree-git-plugin
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "â¹",
-    \ "Staged"    : "â",
-    \ "Untracked" : "â­",
-    \ "Renamed"   : "â",
-    \ "Unmerged"  : "â",
-    \ "Deleted"   : "â",
-    \ "Dirty"     : "â",
-    \ "Clean"     : "âï¸",
-    \ 'Ignored'   : 'â',
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
     \ "Unknown"   : "?"
     \ }
 

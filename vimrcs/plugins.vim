@@ -34,6 +34,8 @@ Plug 'mhinz/vim-startify'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
+Plug 'hiphish/awk-ward.nvim'
+Plug 'jiangmiao/auto-pairs'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 

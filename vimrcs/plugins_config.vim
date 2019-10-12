@@ -267,3 +267,5 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
 map <leader>gr :w<cr>:GoRun<cr>
 map <leader>gb :w<cr>:GoBuild 
+
+let g:XkbSwitchLib = '/usr/local/lib/libInputSourceSwitcher.dylib'

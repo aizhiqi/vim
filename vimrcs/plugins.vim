@@ -99,8 +99,9 @@ Plug 'dart-lang/dart-vim-plugin'
 "go support
 Plug 'fatih/vim-go'
 
-if has("macunix")
-Plug 'ybian/smartim'
-endif
+"auto switch input
+Plug 'rlue/vim-barbaric'
+"need to manul install xkbswitch https://github.com/myshov/xkbswitch-macosx
+Plug 'lyokha/vim-xkbswitch'
 
 call plug#end()

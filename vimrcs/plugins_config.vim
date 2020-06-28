@@ -268,4 +268,15 @@ let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
 map <leader>gr :w<cr>:GoRun<cr>
 map <leader>gb :w<cr>:GoBuild 
 
-let g:XkbSwitchLib = '/usr/local/lib/libInputSourceSwitcher.dylib'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => for Dart
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:lsc_auto_map = v:true
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => lyokha/vim-xkbswitch
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:XkbSwitchEnabled = 1
+let g:XkbSwitchSkipFt = [ 'nerdtree' ]

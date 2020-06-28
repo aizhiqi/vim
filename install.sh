@@ -40,6 +40,6 @@ echo 'install plugins'
 nvim -c 'PlugInstall' -c 'qa!'
 
 echo 'install coc plugins'
-nvim -c 'CocInstall -sync coc-python coc-highlight coc_pairs coc-tag coc-word coc-dictionary coc-syntax coc-json coc-yank coc-git coc-ultisnips|q'
+nvim -c 'CocInstall -sync coc-python coc-highlight coc_pairs coc-tag coc-syntax coc-json coc-yank coc-git coc-ultisnips|q'
 
 echo "Installed successfully! Enjoy :-)"

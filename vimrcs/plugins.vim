@@ -94,14 +94,24 @@ Plug 'honza/vim-snippets'
 
 
 "dart support
+"https://dev.to/tavanarad/vim-as-a-flutter-ide-4p16
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'natebosch/vim-lsc'
+Plug 'natebosch/vim-lsc-dart'
+Plug 'thosakwe/vim-flutter'
 
 "go support
 Plug 'fatih/vim-go'
 
 "auto switch input
-Plug 'rlue/vim-barbaric'
-"need to manul install xkbswitch https://github.com/myshov/xkbswitch-macosx
+"Plug 'rlue/vim-barbaric'
+"
+"
+    "git clone https://github.com/myshov/xkbswitch-macosx
+    "cp xkbswitch-macosx/bin/xkbswitch /usr/local/bin
+    "git clone https://github.com/myshov/libxkbswitch-macosx
+    "cp libxkbswitch-macosx/bin/libxkbswitch.dylib /usr/local/lib/
+    "install plugin: https://github.com/lyokha/vim-xkbswitch
 Plug 'lyokha/vim-xkbswitch'
 
 call plug#end()

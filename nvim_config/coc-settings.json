@@ -1,17 +1,5 @@
 {
     "languageserver": {
-        "dart": {
-            "command": "dart",
-            "args": [
-                "/Volumes/Documents/aizhiqi/Development/flutter/bin/cache/dart-sdk/bin/snapshots/analysis_server.dart.snapshot",
-                "--lsp"
-            ],
-            "filetypes": [
-                "dart"
-            ],
-            "disableDynamicRegister": true,
-            "trace.server": "verbose"
-        },
         "bash": {
             "command": "bash-language-server",
             "args": [

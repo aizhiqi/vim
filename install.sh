@@ -24,6 +24,9 @@ if [ ! -e "$vimConfig" ]; then
     endtry' > ${HOME}/.vimrc
 fi
 
+echo 'install bash-language-server'
+npm i -g bash-language-server
+
 nvimConfig="${HOME}/.config/nvim"
 if [ ! -e "$nvimConfig" ]; then
     echo 'copy configration for nvim'
@@ -40,6 +43,6 @@ echo 'install plugins'
 nvim -c 'PlugInstall' -c 'qa!'
 
 echo 'install coc plugins'
-nvim -c 'CocInstall -sync coc-python coc-highlight coc_pairs coc-tag coc-syntax coc-json coc-yank coc-git coc-ultisnips|q'
+nvim -c 'CocInstall -sync coc-python coc-highlight coc_pairs coc-tag coc-syntax coc-json coc-yank coc-git coc-ultisnips coc-flutter|q'
 
 echo "Installed successfully! Enjoy :-)"

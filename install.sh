@@ -7,7 +7,6 @@ vimConfig="${HOME}/.vimrc"
 if [ ! -e "$vimConfig" ]; then
     echo 'copy configration for vim'
 
-    # source ${HOME}/.vim/vimrcs/coc.vim
     echo '
     set runtimepath+=${HOME}/.vim
 
@@ -16,6 +15,7 @@ if [ ! -e "$vimConfig" ]; then
     source ${HOME}/.vim/vimrcs/extended.vim
     source ${HOME}/.vim/vimrcs/plugins.vim
     source ${HOME}/.vim/vimrcs/plugins_config.vim
+    source ${HOME}/.vim/vimrcs/coc.vim
     source ${HOME}/.vim/vimrcs/filetypes.vim
 
     try
@@ -42,7 +42,7 @@ fi
 echo 'install plugins'
 nvim -c 'PlugInstall' -c 'qa!'
 
-#echo 'install coc plugins'
-#nvim -c 'CocInstall -sync coc-python coc-highlight coc_pairs coc-tag coc-syntax coc-json coc-yank coc-git coc-ultisnips coc-python coc-flutter|q'
+echo 'install coc plugins'
+nvim -c 'CocInstall -sync coc-python coc-highlight coc_pairs coc-tag coc-syntax coc-json coc-yank coc-git coc-ultisnips coc-python coc-flutter|q'
 
 echo "Installed successfully! Enjoy :-)"

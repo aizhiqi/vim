@@ -82,7 +82,7 @@ Plug 'universal-ctags/ctags'
 
 "coc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
- Plug 'neoclide/coc.nvim'
+ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 

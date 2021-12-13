@@ -187,6 +187,11 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
+"Highlight the current line
+set cursorline 
+"Highlight the current column
+set cursorcolumn 
+
 " set undofile path
 try
     set undodir=~/.vim/temp_dirs/undodir
